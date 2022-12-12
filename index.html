@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vereificador de idade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de Idade</h1>
+    </header>
+    <div class="container">
+      <section>
+        <div id="nascimento">
+          <label for="ano" name="number">Ano de Nascimento:</label>
+          <input type="number" name="number" id="ano" />
+        </div>
+        <div id="sexo">
+          <label for="">Sexo:</label>
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="gender" id="masculino" />
+          <label for="mulher">Feminino</label>
+          <input type="radio" name="gender" id="mulher" />
+        </div>
+        <input
+          id="btn"
+          type="button"
+          value="Verificar"
+          onclick="comparador()"
+        />
+      </section>
+      <section id="js">
+        <p id="paragrafo1"></p>
+        <img id="imagem" src="img/homem-jovem.jpg" alt="" />
+        <p id="paragraph">Preencha os dados a cima para ver o resultado</p>
+      </section>
+    </div>
+    <footer class="footer">
+      <p>Criado por RochaDev&copy;</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
